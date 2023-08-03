@@ -32,7 +32,11 @@ app.get("/bundle.js", (req, res) => {
 
 app.post("/image", upload, (req, res) => {
   console.log(req.file);
-  return res.json({ msg: "AYO WHAT??" });
+  console.log(req.body.imageData);
+
+  const imageBuffer = Buffer.from(imageData, "base64");
+
+  console.log(imageBuffer);
 });
 
 app.listen(port, (req, res) => {
