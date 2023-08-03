@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=require("@uppy/core");document.addEventListener("DOMContentLoaded",(()=>{console.log("The DOM is ready!")})),new e})();
